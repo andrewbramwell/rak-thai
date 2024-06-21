@@ -17,27 +17,26 @@ eleventyNavigation:
 {% block body %}
 
 <!-- ============================================ -->
+<!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-1400">
+<div id="banner-310">
     <div class="cs-container">
-        <span class="cs-int-title">Contact Us</span>
+        <span class="cs-int-title">Contact</span>
         <div class="cs-breadcrumbs">
-            <a href="" class="cs-link">Home</a>
-            <a href="/contact/" class="cs-link cs-active">Contact</a>
+            <a href="/" class="cs-link">Home</a>
+            <a href="" class="cs-link cs-active">Contact</a>
         </div>
     </div>
     <!--Background Image-->
     <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/banners/banner3-m.webp">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/banners/banner3.webp">
-        <img decoding="async" src="/assets/images/banners/banner3.jpg" alt="candles and oils" width="1280" height="568" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="/assets/images/chelsea-shapouri-r40EYKVyutI-unsplash-_1_.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/chelsea-shapouri-r40EYKVyutI-unsplash-_1_.webp">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/chelsea-shapouri-r40EYKVyutI-unsplash-_1_.webp" alt="library" width="1920" height="375">
     </picture>
 </div>
-
+         
 
 <!-- ============================================ -->
 <!--                   Contact                    -->
@@ -69,8 +68,7 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Opening Hours</span>
-                        <a href="{{client.address.mapLink}}" target="_blank" rel="noopener" class="cs-link">Mon-Sat: 10am-7pm <br>Wed-Sat: 10am - 6pm <br>
-                            Sunday: Closed</a>
+                        <a href="{{client.address.mapLink}}" target="_blank" rel="noopener" class="cs-link">Monday - Sunday: 10:00 – 21:00 </a>
                     </div>
                 </li>
                 <li class="cs-li">
@@ -86,7 +84,7 @@ eleventyNavigation:
         </div>
         <!--Form-->
         <form class="cs-form" id="cs-form-1388" name="Contact Form" method="post" data-netlify="true"><input type='hidden' name='form-name' value='Contact Form' />
-            <h3 class="cs-h3">How Can We Help?</h3>
+            <h3 class="cs-h3">Contact Us</h3>
             <label class="cs-label">
                 Name
                 <input class="cs-input" required type="text" id="name-1388" name="name" placeholder="Name">

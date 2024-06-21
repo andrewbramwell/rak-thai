@@ -1,0 +1,83 @@
+---
+title: 'Thai Oil'
+description: ''
+preloadImg: '/assets/images/banners/banner3.webp'
+permalink: /thaioil/
+eleventyNavigation:
+
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/internal.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-310">
+    <div class="cs-container">
+        <span class="cs-int-title">Thai Oil Massage</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="" class="cs-link cs-active">About Us</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/chelsea-shapouri-r40EYKVyutI-unsplash-_1_.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/chelsea-shapouri-r40EYKVyutI-unsplash-_1_.webp">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/chelsea-shapouri-r40EYKVyutI-unsplash-_1_.webp" alt="library" width="1920" height="375">
+    </picture>
+</div>
+                                
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+
+<section id="content-page-1402">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/13162.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/13162.webp">
+                    <img loading="lazy" decoding="async" src="/assets/images/13162 (1).jpg" alt="people" width="542" height="728">
+                </picture>
+  
+            </div>
+
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Thai Oil Massage  <span class="cs-color">In Kent</span></h1>
+            <h2>What Is Thai Oil Massage</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laboriosam eum quae in temporibus cumque tempora expedita mollitia nostrum adipisci, ipsum commodi, cupiditate, sequi quos enim! Quaerat esse non sunt! Lorem ipsum dolor sit amet <a href="">link example</a>. Est, quis!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laboriosam eum quae in temporibus cumque tempora expedita mollitia nostrum <strong>adipisci, ipsum commodi</strong>, cupiditate, sequi quos enim! 
+            </p>
+            <h3>Benfits Of Thai Oil Massage</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+                                
+{% include 'components/cta.html' %}
+
+{% endblock %}

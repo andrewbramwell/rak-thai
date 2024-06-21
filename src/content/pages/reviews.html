@@ -2,8 +2,10 @@
 title: 'Reviews'
 description: ''
 preloadImg: '/assets/images/banners/banner3.webp'
-permalink: false
+permalink: reviews/
 eleventyNavigation:
+    key: Reviews
+    order: 400
 ---
 
 {% extends "layouts/base.html" %}
@@ -15,78 +17,105 @@ eleventyNavigation:
 {% block body %}
 
 <!-- ============================================ -->
+<!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-1400">
+<div id="banner-310">
     <div class="cs-container">
         <span class="cs-int-title">Reviews</span>
         <div class="cs-breadcrumbs">
-            <a href="" class="cs-link">Home</a>
-            <a href="/reviews/" class="cs-link cs-active">Reviews</a>
+            <a href="/" class="cs-link">Home</a>
+            <a href="" class="cs-link cs-active">Reviews</a>
         </div>
     </div>
     <!--Background Image-->
     <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/banners/banner3-m.webp">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/banners/banner3.webp">
-        <img decoding="async" src="/assets/images/banners/banner3.jpg" alt="candles and oils" width="1280" height="568" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="/assets/images/chelsea-shapouri-r40EYKVyutI-unsplash-_1_.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/chelsea-shapouri-r40EYKVyutI-unsplash-_1_.webp">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/chelsea-shapouri-r40EYKVyutI-unsplash-_1_.webp" alt="library" width="1920" height="375">
     </picture>
 </div>
+                                
 
 
-    <!-- ============================================ -->
-    <!--                  Reviews                     -->
-    <!-- ============================================ -->
+   <!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
 
-    <section id="reviews">
-        <div class="container">
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                </p>
-                <div class="star-group">
-                    <span class="name">Lorem</span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                </p>
-                <div class="star-group">
-                    <span class="name">Lorem</span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                </p>
-                <div class="star-group">
-                    <span class="name">Lorem</span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
+<section id="reviews-608">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">What Our Clients Think</h2>
+
         </div>
-    </section>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">the best thai massage!</h3>
+                <p class="cs-item-text">
+                    The best traditional Thai Massage outside of Thailand! The girls were so lovely and kind and incredibly good. We had a 90 minute couples massage and it was superb and so relaxing! We will definitely come back here again! Wonderful Thai service and Thai smiles. 🙏🏻
+                </p>
+                <span class="cs-name">Davinia</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">highly recommended</h3>
+                <p class="cs-item-text">
+                    A fantastic place to get an authentic Thai massage. I personally stayed in Thailand for months, a couple of years ago, and found Thai massages to be far superior to other types of massage. I always leave here feeling very refreshed and relaxed and wake up the next day with relaxed, loose muscles. Highly recommend Rak Thai!!
+                </p>
+                <span class="cs-name">Jade C</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">very relaxing</h3>
+                <p class="cs-item-text">
+                    I went for my 1st time on Saturday. I was led to my room met Sonia. She was so good and really made me feel important. Thank you and will see you again very soon. X
+                </p>
+                <span class="cs-name">Jef T</span>
+            </li>
+
+        </ul>
+    </div>
+</section>
+                                <!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-608">
+    <div class="cs-container">
+        
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Definitely going to return</h3>
+                <p class="cs-item-text">
+                    Following the reviews I took a chance on a walk in and was met by Aileen (my apologies if spelling is wrong) and enjoyed a fantastic 60 minute Thai oil massage.  And definitely going to return
+                </p>
+                <span class="cs-name">Henry</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Lovely</h3>
+                <p class="cs-item-text">
+                    Lovely Thai oil massage, got all my knots out, left feeling very relaxed. Thank you
+                </p>
+                <span class="cs-name">Claire</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Amazing</h3>
+                <p class="cs-item-text">
+                    Amazing massage ...and I've tried most in the Maidstone area! Each girl gives a different experience...but all leave no Stone unturned and make me aware of places I was sore in that I had no idea!! Throughly recommend!!
+                </p>
+                <span class="cs-name">Laura</span>
+            </li>
+  
+        </ul>
+    </div>
+</section>
+                                
 
     {% include 'components/cta.html' %}
 

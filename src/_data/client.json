@@ -1,16 +1,16 @@
 {
-    "name": "Smile Beauty Spa",
-    "email": "hello@smile-beauty.co.uk",
-    "phoneForTel": "+441264318039",
-    "phoneFormatted": "01264 318039",
-    "onlineBooking": "https://smilebeautyspa.setmore.com/beta",
+    "name": "Rak Thai Massage ",
+    "email": "rakthaispa99@gmail.com",
+    "phoneFormatted": " 07542 669798 ",
+    "onlineBooking": "https://rakthaimassage.setmore.com/beta",
     "address": {
-        "lineOne": "7 Andover Rd",
-        "lineTwo": "",
-        "city": "Ludgershall",
-        "state": "Andover",
-        "zip": "SP11 9LU",
+        "lineOne": "65 Union Street,",
+        "lineTwo": "Maidstone,",
+        "city": "Kent",
+        "zip": "ME14 1ED",
         "mapLink": "https://maps.app.goo.gl/qfJHxcNS7GAV1A316"
     },
-    "domain": "https://smile-beauty.co.uk/"
+    "domain": "https://smile-beauty.co.uk/",
+    "operatinghours":"Monday - Sunday: 10:00 – 21:00 "
+    
 }

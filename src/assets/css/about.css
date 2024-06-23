@@ -129,6 +129,10 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
+  #sbsr-1462 .cs-content h2 {
+    text-align: left;
+    margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
+  }
   #sbsr-1462 .cs-title {
     color: black;
   }

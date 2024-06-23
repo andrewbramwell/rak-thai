@@ -126,6 +126,7 @@
             flex-direction: column;
             /* 16px - 20px */
             gap: clamp(1rem, 2vw, 1.25rem);
+            background-color: #F7F7F7;
         }
 
         .cs-item {
@@ -136,11 +137,11 @@
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             border-radius: (0px);
-            border: 1px solid #e8e8e8;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
         }
 
         .cs-icon-wrapper {
@@ -157,7 +158,6 @@
                 content: "";
                 width: (18/16rem);
                 height: (18/16rem);
-                border-radius: 50%;
                 background: #e5f2ff;
                 opacity: 1;
                 position: absolute;
@@ -175,7 +175,6 @@
                 content: "";
                 width: (18/16rem);
                 height: (18/16rem);
-                border-radius: 50%;
                 background: #e5f2ff;
                 opacity: 1;
                 position: absolute;
@@ -202,7 +201,6 @@
                 content: "";
                 width: (43/16rem);
                 height: (43/16rem);
-                border-radius: 50%;
                 background: #e5f2ff;
                 opacity: 1;
                 position: absolute;
@@ -221,7 +219,6 @@
                 content: "";
                 width: (31/16rem);
                 height: (31/16rem);
-                border-radius: 50%;
                 background: #e5f2ff;
                 opacity: 1;
                 position: absolute;
@@ -286,7 +283,12 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+
     #why-choose-359 {
+
+        .cs-topper {
+            color: var(--primary);
+        }
         .cs-container {
             max-width: (1280/16rem);
             flex-direction: row;
@@ -314,7 +316,11 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
+        
         #why-choose-359 {
+            .cs-card-group{
+                background-color: #131313;
+            }
             .cs-topper {
                 color: var(--primaryLight);
             }
@@ -469,7 +475,7 @@
         }
 
         .cs-topper {
-            color: var(--secondary);
+            color: var(--primary);
         }
 
         .cs-text {
@@ -480,7 +486,7 @@
         }
 
         .cs-color {
-            color: var(--primary);
+            color: var(--secondary);
         }
 
         .cs-h3 {
@@ -488,10 +494,14 @@
             font-size: clamp(1.5625rem, 3vw, 1.9375rem);
             line-height: 1.2em;
             font-weight: 700;
-            text-align: inherit;
+            text-align: left;
             /* 16px - 20px */
             margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
             color: var(--headerColor);
+        }
+        .cs-content h2{
+            text-align: left;
+            margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
         }
 
         .cs-ul {
@@ -523,7 +533,10 @@
             /* adds extra space between the icon and top of parent so it's more centered */
             margin-top: clamp(0.125rem, 0.47vw, 0.4375rem);
         }
-
+        h2{
+            text-align: left;
+        }
+   
         .cs-button-solid {
             font-size: (16/16rem);
             /* 46px - 56px */
@@ -536,7 +549,6 @@
             min-width: (150/16rem);
             padding: 0 (24/16rem);
             background-color: var(--primary);
-            border-radius: (4/16rem);
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -553,7 +565,6 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                border-radius: (4/16rem);
                 transition: width 0.3s;
             }
 
@@ -620,7 +631,7 @@
             }
 
             .cs-color {
-                color: var(--primaryLight);
+                color: var(--secondary);
             }
             .cs-title,
             .cs-text,
@@ -730,7 +741,10 @@
 @media only screen and (min-width: 0rem) {
     #services-879 {
         padding: var(--sectionPadding);
-        
+        .cs-topper {
+            color: var(--primary);
+        }
+
         .cs-container {
             width: 100%;
             /* changes to 1280px at desktop */
@@ -978,7 +992,7 @@
         }
 
         .cs-topper {
-            color: var(--headerColor);
+            color: var(--primary);
         }
 
         .cs-text {
@@ -989,7 +1003,7 @@
         }
 
         .cs-color {
-            color: var(--primary);
+            color: var(--secondary);
         }
 
         .cs-h3 {
@@ -1119,6 +1133,9 @@
         }
     }
 }
+.cs-content h2{
+    margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
+}
 
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
@@ -1126,7 +1143,7 @@
         #services-564 {
             background-color: var(--dark);
             .cs-topper {
-                color: var(--bodyTextColorWhite);
+                color: var(--secondary);
             }
 
             .cs-color {
@@ -1151,45 +1168,6 @@
 }
                                 
 
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #sbs-945 {
-            background-color: var(--charcoal);
-            .cs-title,
-            .cs-text,
-            .cs-header,
-            .cs-link-content {
-                color: var(--bodyTextColorWhite);
-                transition: color 0.3s;
-            }
-
-            .cs-text {
-                opacity: 0.8;
-            }
-
-            .cs-topper {
-                color: var(--secondary);
-            }
-
-            .cs-link {
-                &:before {
-                    background-color: var(--accent);
-                }
-            }
-
-            .cs-icon {
-                /* makes icons that are not black turn white */
-                filter: grayscale(1) brightness(1000%);
-            }
-
-            .cs-graphic1,
-            .cs-graphic2 {
-                filter: brightness(50%);
-            }
-        }
-    }
-}
 
 
 /*-- -------------------------- -->
@@ -1445,7 +1423,7 @@
         #reviews-727 {
             background-color: var(--dark);
             .cs-topper {
-                color: var(--primaryLight);
+                color: var(--secondary);
             }
 
             .cs-title,
@@ -1632,7 +1610,7 @@
         #reviews-607 {
             background-color: var(--charcoal);
             .cs-topper {
-                color: var(--primaryLight);
+                color: var(--primary);
             }
 
             .cs-title,

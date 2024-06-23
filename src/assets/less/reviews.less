@@ -119,8 +119,10 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+
     #reviews-608 {
-        padding: 25px;
+        padding: var(--sectionPadding);
+
 
         .cs-container {
             width: 100%;
@@ -225,6 +227,8 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #reviews-608 {
+        padding: var(--sectionPadding);
+
         .cs-container {
             max-width: (1440/16rem);
         }
@@ -243,7 +247,10 @@
 
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
+    
     #reviews-608 {
+        padding: var(--sectionPadding);
+
         .cs-card-group {
             align-items: stretch;
             justify-content: center;
@@ -259,7 +266,6 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #reviews-608 {
-            .cs-topper,
             .cs-title,
             .cs-text,
             .cs-h3,

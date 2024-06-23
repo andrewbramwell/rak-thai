@@ -9,9 +9,8 @@
     --secondary: #FFA200;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
-    --bodyTextColor: #white;
     --bodyTextColorWhite: #fafbfc;
-    --hover: #A70B0B;
+    --hover: #FFA200;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -21,7 +20,7 @@
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
   .cs-topper {
-    font-family: "DM Sans", Arial, sans-serif;
+    font-family: "raleway-reg", Arial, sans-serif;
     font-size: var(--topperFontSize);
     font-weight: 700;
     line-height: 1.2em;
@@ -106,10 +105,10 @@
   @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'DM Sans';
+    font-family: 'raleway-extrabold';
     font-style: normal;
     font-weight: 900;
-    src: url('/assets/fonts/dm-sans-v14-latin-900.woff2') format('woff2');
+    src: url('/src/assets/fonts/Raleway-ExtraBold.ttf') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* raleway - normal */
@@ -164,11 +163,12 @@
   h6 {
     margin: 0;
     color: var(--headerColor);
-    font-family: "raleway-reg", Arial, serif;
+    font-family: "raleway-extrabold", Arial, serif;
   }
   p,
   li,
   a {
+    font-family: "raleway-reg", Arial, serif;
     font-size: 1rem;
     line-height: 1.5em;
     margin: 0;
@@ -902,7 +902,7 @@ html {
     margin: 0;
     color: var(--bodyTextColorWhite);
     position: relative;
-    font-family: "raleway-reg", Arial, serif;
+    font-family: "raleway-bold", Arial, serif;
   }
   #banner-1400 .cs-breadcrumbs {
     display: flex;

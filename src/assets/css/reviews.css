@@ -105,7 +105,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #reviews-608 {
-    padding: 25px;
+    padding: var(--sectionPadding);
   }
   #reviews-608 .cs-container {
     width: 100%;
@@ -199,6 +199,9 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  #reviews-608 {
+    padding: var(--sectionPadding);
+  }
   #reviews-608 .cs-container {
     max-width: 90rem;
   }
@@ -213,6 +216,9 @@
 }
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
+  #reviews-608 {
+    padding: var(--sectionPadding);
+  }
   #reviews-608 .cs-card-group {
     align-items: stretch;
     justify-content: center;
@@ -223,7 +229,6 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #reviews-608 .cs-topper,
   body.dark-mode #reviews-608 .cs-title,
   body.dark-mode #reviews-608 .cs-text,
   body.dark-mode #reviews-608 .cs-h3,

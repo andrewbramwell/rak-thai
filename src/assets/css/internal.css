@@ -244,6 +244,10 @@
     flex-direction: column;
     gap: 1rem;
   }
+  #content-page-1402 .cs-content h1 {
+    text-align: left;
+    margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
+  }
   #content-page-1402 ul li {
     list-style: none;
     color: inherit;

@@ -32,21 +32,21 @@
             <span class="cs-header">Contact</span>
             <ul class="cs-ul">
                 <li class="cs-li">
-                    <a class="cs-link" href="tel:555-497-1900">
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-white.svg" alt="phone icon" width="24" height="24">
+                    <a class="cs-link" href="tel:{{client.phoneFormatted}}">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/phone-rounded-svgrepo-com.svg" alt="phone icon" width="24" height="24">
                         {{client.phoneFormatted}}
                     </a>
                 </li>
                 <li class="cs-li">
-                    <a class="cs-link" href="mailto:office@email.com">
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/email-white.svg" alt="email icon" width="24" height="24">
+                    <a class="cs-link" href="mailto:{{client.email}}">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/email-1573-svgrepo-com (1).svg" alt="email icon" width="24" height="24">
                         {{client.email}}
                     </a>
                 </li>
                 <li class="cs-li">
                     <!--Make this link go to the google page-->
-                    <a class="cs-link" href="" target="_blank">
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-white.svg" alt="pin icon" width="24" height="24">
+                    <a class="cs-link" href="{{client.address.mapLink}}" target="_blank" >
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/pin-fill-rounded-close-633-svgrepo-com.svg" alt="pin icon" width="24" height="24">
                         {{client.address.lineOne}}
                         {{client.address.lineTwo}}
                         {{client.address.city}}

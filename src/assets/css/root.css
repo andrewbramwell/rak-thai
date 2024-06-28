@@ -88,7 +88,7 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('/assets/fonts/dm-sans-v14-latin-regular.woff2') format('woff2');
+    src: url('/assets/fonts/Raleway-Regular.ttf') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* dm-sans-700 - latin */
@@ -98,7 +98,7 @@
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
-    src: url('/assets/fonts/dm-sans-v14-latin-700.woff2') format('woff2');
+    src: url('/assets/fonts/Raleway-ExtraBold.ttf') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* dm-sans-900 - latin */
@@ -108,7 +108,7 @@
     font-family: 'raleway-extrabold';
     font-style: normal;
     font-weight: 900;
-    src: url('/src/assets/fonts/Raleway-ExtraBold.ttf') format('woff2');
+    src: url('/assets/fonts/Raleway-ExtraBold.ttf') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* raleway - normal */
@@ -133,7 +133,7 @@
   }
   body,
   html {
-    font-family: "DM Sans", Arial, sans-serif;
+    font-family: "Raleway-reg", Arial, sans-serif;
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -163,7 +163,7 @@
   h6 {
     margin: 0;
     color: var(--headerColor);
-    font-family: "raleway-extrabold", Arial, serif;
+    font-family: "raleway-extrabold";
   }
   p,
   li,
@@ -179,7 +179,7 @@
   }
   a,
   button {
-    font-family: "raleway-bold", Arial;
+    font-family: "raleway-bold", Arial, Helvetica, sans-serif;
   }
   a:hover,
   button:hover {

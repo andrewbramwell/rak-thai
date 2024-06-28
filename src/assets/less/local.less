@@ -8,58 +8,6 @@
         background-color:white;
         padding: var(--sectionPadding);
 
-        @keyframes floatAnimation2 {
-            0% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-4px);
-            }
-            70% {
-                transform: translateY(4px);
-            }
-            100% {
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes InAndOut {
-            0% {
-                transform: translateY(2.5rem) scale(1);
-                opacity: 1;
-            }
-            30% {
-                transform: translateY(1.25rem) scale(0.8);
-                opacity: 1;
-            }
-            60% {
-                transform: translateY(0.625rem) scale(0.5);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(0rem) scale(0.5);
-                opacity: 0;
-            }
-        }
-
-        @keyframes InAndOut2 {
-            0% {
-                transform: translateY(3.125rem) scale(1);
-                opacity: 1;
-            }
-            30% {
-                transform: translateY(2.5rem) scale(1);
-                opacity: 1;
-            }
-            60% {
-                transform: translateY(1.25rem) scale(0.6);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(0rem) scale(0.4);
-                opacity: 0;
-            }
-        }
 
         .cs-container {
             width: 100%;
@@ -152,85 +100,7 @@
             justify-content: center;
             align-items: flex-end;
             position: relative;
-
-            &:before {
-                /* Small Bubble */
-                content: "";
-                width: (18/16rem);
-                height: (18/16rem);
-                background: #e5f2ff;
-                opacity: 1;
-                position: absolute;
-                display: block;
-                top: 0;
-                left: (3/16rem);
-                animation-name: InAndOut;
-                animation-duration: 1.6s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-            }
-
-            &:after {
-                /* Small Bubble */
-                content: "";
-                width: (18/16rem);
-                height: (18/16rem);
-                background: #e5f2ff;
-                opacity: 1;
-                position: absolute;
-                display: block;
-                top: (11/16rem);
-                right: (5/16rem);
-                animation-name: InAndOut2;
-                animation-duration: 2s;
-                animation-delay: 0.3s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-            }
-        }
-
-        .cs-bubble {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-
-            &:before {
-                /* Big Bubble */
-                content: "";
-                width: (43/16rem);
-                height: (43/16rem);
-                background: #e5f2ff;
-                opacity: 1;
-                position: absolute;
-                display: block;
-                bottom: (4/16rem);
-                left: (0/16rem);
-                animation-name: floatAnimation2;
-                animation-duration: 6s;
-                animation-timing-function: ease-in-out;
-                animation-fill-mode: forwards;
-                animation-iteration-count: infinite;
-            }
-
-            &:after {
-                /* Big Bubble */
-                content: "";
-                width: (31/16rem);
-                height: (31/16rem);
-                background: #e5f2ff;
-                opacity: 1;
-                position: absolute;
-                display: block;
-                bottom: (-4/16rem);
-                right: (0/16rem);
-                animation-name: floatAnimation2;
-                animation-duration: 4s;
-                animation-timing-function: ease-in-out;
-                animation-fill-mode: forwards;
-                animation-iteration-count: infinite;
-            }
+            
         }
 
         .cs-icon {
@@ -499,9 +369,12 @@
             margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
             color: var(--headerColor);
         }
-        .cs-content h2{
+        content h2{
             text-align: left;
             margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
+            font-size: 60px;
+
+
         }
 
         .cs-ul {
@@ -984,12 +857,6 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
 
         .cs-topper {
             color: var(--primary);
@@ -1134,7 +1001,9 @@
     }
 }
 .cs-content h2{
+    text-align: left;
     margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
+    font-size: 60px;
 }
 
 /* Dark Mode */
